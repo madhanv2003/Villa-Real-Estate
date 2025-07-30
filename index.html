@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Villa Real Estate</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Top Header -->
+  <div class="bg-light py-1 text-left small">
+    <span class="me-3">&nbsp&nbsp📧 info@company.com</span>
+    <span class="me-4">📍 Sunny Isles Beach, FL 33160</span>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top" >
+    <div class="container">
+      <a class="navbar-brand fw-bold" style="font-size:30px";>VILLA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item" id="#home">
+              <a class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#property">Property</a>
+            </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <a class="btn btn-secondary dropdown-toggle " style="background-color:white;color:black;border:none" href="#propertydetails" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Property Details
+              </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Apartment</a></li>
+              <li><a class="dropdown-item" href="#">Villas</a></li>
+              <li><a class="dropdown-item" href="#">Pent house</a></li>
+            </ul>
+          </div>
+          </li>
+          <li class="nav-item">
+             <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle " style="background-color:white;color:black;border:none" href="#contact" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Contact Us
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Documentation</a></li>
+                  <li><a class="dropdown-item" href="#">References</a></li>
+                </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-black rounded-pill ms-2" style="background-color:#fd5d14;" href="#schedule">Schedule a visit</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero-section position-relative" href="#home">
+    <div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./images/images/banner-01.jpg" class="d-block w-100 " alt="...">
+        <div class="hero-text position-absolute top-50 left-50 start-0 translate-middle-y text-white px-5">
+          <span class="badge bg-light text-dark mb-2">Toronto, <span class="text-danger">Canada</span></span>
+          <h1 class="display-4 fw-bold">HURRY!<br>GET THE BEST<br>VILLA FOR YOU</h1>
+        </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./images/images/banner-02.jpg" class="d-block w-100" alt="...">
+      <div class="hero-text position-absolute top-50 left-50 start-0 translate-middle-y text-white px-5">
+        <span class="badge bg-light text-dark mb-2">Toronto, <span class="text-danger">Canada</span></span>
+        <h1 class="display-4 fw-bold">HURRY!<br>GET THE BEST<br>VILLA FOR YOU</h1>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="./images/images/banner-03.jpg" class="d-block w-100" alt="...">
+        <div class="hero-text position-absolute top-50 left-50 start-0 translate-middle-y text-white px-5">
+          <span class="badge bg-light text-dark mb-2">Toronto, <span class="text-danger">Canada</span></span>
+          <h1 class="display-4 fw-bold">HURRY!<br>GET THE BEST<br>VILLA FOR YOU</h1>
+        </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+  <div class="container py-5" class="ken"style="margin-top: 250px;">
+  <div class="row ">
+    <!-- Left Column: Image -->
+    <div class="col-md-5">
+      <img src="./images/images/featured.jpg" style="width: 300px;height:350px;margin-left:100px" alt="Apartment" class="featuredd">
+    </div>
+
+    <!-- Middle Column: Title & Description -->
+    <div class="col-md-4 mt-4 mt-md-0">
+      <p class="featured">| FEATURED</p>
+      <h2 class="info-title" style="font-size: 40px;">Best <br>Appartment &<br>Sea View</h2>
+      <br>
+      <div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Best Useful Links ?
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the first item’s accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        How does this work ?
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the second item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Why is villa agency is best ?
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the third item’s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It’s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+    <div class="col-md-3 mt-4 mt-md-0">
+      <div class="icon-box mb-3 d-flex align-items-start">
+        <i class="bi bi-aspect-ratio"></i>
+        <div>
+          <div><strong>250 m2</strong></div>
+          <div>Total Flat Space</div>
+          
+        </div>
+      </div>
+      <div class="icon-box mb-3 d-flex align-items-start">
+        <i class="bi bi-file-earmark-text"></i>
+        <div>
+          <div><strong>Contract</strong></div>
+          <div>Contract Ready</div>
+        </div>
+      </div>
+      <div class="icon-box mb-3 d-flex align-items-start">
+        <i class="bi bi-credit-card"></i>
+        <div>
+          <div><strong>Payment</strong></div>
+          <div>Payment Process</div>
+        </div>
+      </div>
+      <div class="icon-box d-flex align-items-start">
+        <i class="bi bi-shield-lock"></i>
+        <div>
+          <div><strong>Safety</strong></div>
+          <div>24/7 Under Control</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <section class="video-section text-center text-white position-relative">
+    <div class="position-absolute top-0 start-0 w-100 h-100"></div>
+    <div class="container position-relative py-5 align-content-center">
+      <p class="text-danger small fw-bold">| VIDEO VIEW</p>
+      <h1 class="fw-bold display-5">Get Closer View &<br />Different Feeling</h1>
+    </div>
+  </section>
+
+  <!-- Video Preview -->
+  <div class="container my-5">
+    <div class="ratio ratio-16x9 rounded">
+      <img src="./images/images/video-frame.jpg"style="position:absolute;top:-100px;width:170vh;height:70vh;left:50px" alt="Preview" >
+      <div class="video-btn">
+        <button class="btn btn-danger rounded-circle px-3 py-2 " style="position: relative;margin:60px 510px;">
+          ▶
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stats Section -->
+  <section class="container text-center pb-5" style="position: relative;top:-100px">
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-3 col-sm-6">
+        <div class="stat-box p-4 rounded-4 shadow-sm">
+          <h2 class="text-danger fw-bold">34</h2>
+          <p class="mb-0">Buildings<br>Finished Now</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="stat-box p-4 rounded-4 shadow-sm">
+          <h2 class="text-danger fw-bold">12</h2>
+          <p class="mb-0">Years<br>Experience</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="stat-box p-4 rounded-4 shadow-sm">
+          <h2 class="text-danger fw-bold">24</h2>
+          <p class="mb-0">Awards<br>Won 2023</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<div class="container py-5" class="me-5">
+  <div class="row mb-4">
+    <div class="col-md-6">
+      <span class="text-danger fw-bold">| BEST DEAL</span>
+      <h2 class="fw-bold">Find Your Best Deal <br> Right Now!</h2>
+    </div>
+    <div class="col-md-6 d-flex justify-content-end align-items-center">
+      <ul class="nav nav-tabs" id="propertyTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="apartment-tab" data-bs-toggle="tab" type="button">Apartment</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="villa-tab" data-bs-toggle="tab" type="button">Villa House</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="penthouse-tab" data-bs-toggle="tab" type="button">Penthouse</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row g-4 align-items-center">
+    <!-- Info Box -->
+    <div class="col-md-3">
+      <div class="property-info-box">
+        <p>Total Flat Space <span class="float-end highlight">185 m²</span></p>
+        <p>Floor number <span class="float-end highlight">26th</span></p>
+        <p>Number of rooms <span class="float-end highlight">4</span></p>
+        <p>Parking Available <span class="float-end highlight">Yes</span></p>
+        <p>Payment Process <span class="float-end highlight">Bank</span></p>
+      </div>
+    </div>
+
+    <!-- Image -->
+    <div class="col-md-6" class="photo5">
+      <div class="photo5" class="img-fluid rounded" alt="Living Room"></div>
+    </div>
+
+    <!-- Extra Info -->
+    <div class="col-md-3">
+      <h6 class="fw-bold">Extra Info About Property</h6>
+      <p class="text-muted small">Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod tempor pack incididunt ut labore et dolore magna aliqua quised ipsum suspendisse.</p>
+      <p class="text-muted small">When you need free CSS templates, you can simply type TemplateMo in any search engine website.</p>
+      <button class="btn schedule-btn mt-3 px-4">
+        🗓 Schedule a visit
+      </button>
+    </div>
+  </div>
+</div>
+  <div class="container py-5">
+  <div class="text-center mb-5">
+    <div class="sub-title" style="font-size: 20px;" id="property">| PROPERTIES</div>
+    <h2 class="section-title" style="font-size: 40px;">We Provide The <br> Best Property <br>You Like</h2>
+  </div>
+
+  <div class="row g-4">
+    <!-- Property 1 -->
+    <div class="col-md-4">
+      <div class="property-card">
+        <img src="./images/images/property-01.jpg" alt="Property 1" class="img-fluid rounded mb-3">
+        <div class="tag">Luxury Villa</div>
+        <div class="property-price">$2.264.000</div>
+        <h6 class="mt-2">18 New Street Miami, OR 97219</h6>
+        <div class="property-info mt-2 text-muted">
+          <span>Bedrooms: 8</span>
+          <span>Bathrooms: 8</span>
+          <span>Area: 545m²</span>
+          <span>Floor: 3</span>
+          <span>Parking: 6 spots</span>
+        </div>
+        <button class="btn btn-schedule">Schedule a visit</button>
+      </div>
+    </div>
+
+    <!-- Property 2 -->
+    <div class="col-md-4">
+      <div class="property-card">
+        <img src="./images/images/property-02.jpg" alt="Property 2" class="img-fluid rounded mb-3">
+        <div class="tag">Luxury Villa</div>
+        <div class="property-price">$1.180.000</div>
+        <h6 class="mt-2">54 Mid Street Florida, OR 27001</h6>
+        <div class="property-info mt-2 text-muted">
+          <span>Bedrooms: 6</span>
+          <span>Bathrooms: 5</span>
+          <span>Area: 450m²</span>
+          <span>Floor: 3</span>
+          <span>Parking: 8 spots</span>
+        </div>
+        <button class="btn btn-schedule">Schedule a visit</button>
+      </div>
+    </div>
+
+    <!-- Property 3 -->
+    <div class="col-md-4">
+      <div class="property-card">
+        <img src="./images/images/property-03.jpg" alt="Property 3" class="img-fluid rounded mb-3">
+        <div class="tag">Luxury Villa</div>
+        <div class="property-price">$1.460.000</div>
+        <h6 class="mt-2">26 Old Street Miami, OR 38540</h6>
+        <div class="property-info mt-2 text-muted">
+          <span>Bedrooms: 5</span>
+          <span>Bathrooms: 4</span>
+          <span>Area: 225m²</span>
+          <span>Floor: 3</span>
+          <span>Parking: 10 spots</span>
+        </div>
+        <button class="btn btn-schedule">Schedule a visit</button>
+      </div>
+    </div>
+
+    <!-- Property 4 -->
+    <div class="col-md-4">
+      <div class="property-card">
+        <img src="./images/images/property-04.jpg" alt="Property 4" class="img-fluid rounded mb-3">
+        <div class="tag">Luxury Villa</div>
+        <div class="property-price">$1.980.000</div>
+        <h6 class="mt-2">77 Lakeview Blvd, TX 75001</h6>
+        <div class="property-info mt-2 text-muted">
+          <span>Bedrooms: 7</span>
+          <span>Bathrooms: 6</span>
+          <span>Area: 500m²</span>
+          <span>Floor: 2</span>
+          <span>Parking: 4 spots</span>
+        </div>
+        <button class="btn btn-schedule">Schedule a visit</button>
+      </div>
+    </div>
+
+    <!-- Property 5 -->
+    <div class="col-md-4">
+      <div class="property-card">
+        <img src="./images/images/property-05.jpg" alt="Property 5" class="img-fluid rounded mb-3">
+        <div class="tag">Luxury Villa</div>
+        <div class="property-price">$1.750.000</div>
+        <h6 class="mt-2">33 Ocean View, CA 90210</h6>
+        <div class="property-info mt-2 text-muted">
+          <span>Bedrooms: 6</span>
+          <span>Bathrooms: 4</span>
+          <span>Area: 400m²</span>
+          <span>Floor: 2</span>
+          <span>Parking: 5 spots</span>
+        </div>
+        <button class="btn btn-schedule">Schedule a visit</button>
+      </div>
+    </div>
+
+    <!-- Property 6 -->
+    <div class="col-md-4">
+      <div class="property-card">
+        <img src="./images/images/property-06.jpg" alt="Property 6" class="img-fluid rounded mb-3">
+        <div class="tag">Luxury Villa</div>
+        <div class="property-price">$1.350.000</div>
+        <h6 class="mt-2">11 Pine Hill Road, NY 10001</h6>
+        <div class="property-info mt-2 text-muted">
+          <span>Bedrooms: 4</span>
+          <span>Bathrooms: 3</span>
+          <span>Area: 350m²</span>
+          <span>Floor: 1</span>
+          <span>Parking: 3 spots</span>
+        </div>
+        <button class="btn btn-schedule">Schedule a visit</button>
+      </div>
+    </div>
+  </div>
+</div>
+<section class="contact-section" id="contact">
+  <div class="container contact-content">
+    <div class="text-center mb-5">
+      <small class="text-danger fw-bold">| CONTACT US</small>
+      <h2 class="fw-bold mt-3" style="font-size: 40px;">Get In Touch With<br>Our Agents</h2>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <div class="map"></div>
+      </div>
+
+      <div class="col-lg-6" id="schedule">
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Your Name..." required>
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Your E-mail..." required>
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Subject..." required>
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-custom">Send Message</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="row text-center mt-5">
+      <div class="col-md-6 mb-3">
+        <div class="info-box">
+          <i class="bi bi-telephone-fill"></i>
+          <h6 style="font-size: 20px;">010-020-0340</h6>
+          <p class="text-muted" style="font-size: 20px;">Phone Number</p>
+        </div>
+      </div>
+      <div class="col-md-6 mb-3">
+        <div class="info-box" id="home">
+          <i class="bi bi-envelope-fill"></i>
+          <h6 style="font-size: 20px;">info@villa.co</h6>
+          <p class="text-muted" style="font-size: 20px;">Business Email</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+</html>
